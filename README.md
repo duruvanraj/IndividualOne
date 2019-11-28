@@ -61,6 +61,6 @@ After clicking save button. It shows details saved successfully page.
 The data is successfully captured at the backend which could be used later for any other purpose.
 
 
-This project uses Django library, HTML and CSS to design an entry management system
+This project uses Django library, HTML and CSS to design an entry management system. Development server available in Django has been used as server.
 
 BY G. Thilakar Rajaa
