@@ -48,7 +48,7 @@ After entering it checks the database for visitor details. Upon successful retur
 After verifying the details he/she can enter checkout time and click check button. This triggers an e-mail to the vistor with the complete form asking for details as stated in the problem
 
 ### E-mail to visitor
-![E-Mail](https://github.com/latha-velmurugan123/IndividualOne/blob/master/Web%20Files/Output/comail.png)
+![E-Mail](https://github.com/latha-velmurugan123/IndividualOne/blob/master/Web%20Files/Output/comail2.png)
 The E-mail has a link to the form
 
 ### Details form
