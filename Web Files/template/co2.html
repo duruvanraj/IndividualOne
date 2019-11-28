@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+
+	<title>Check Out</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'login/css/bootstrap.min.css' %}" type="text/css" />
+
+	<!-- Custom stlylesheet -->
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'login3/css/style.css' %}" type="text/css" />
+
+	
+<style>
+h3 {background-color:Blue;}
+</style>		
+<h3 style="color:white">Welcome Visitor</h3>
+</head>
+
+<body>
+
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+			<h1 style="color:white">Check Out</h1>
+				<div class="row">
+				
+				 
+					<div class="booking-form">
+						<form action="check0" method=get>
+						<div class="row">
+									<div class="col-md-12"> <h5><b>Visitor mobile number<h5></div>
+								
+								</div>
+							
+								<div class="row">
+								<div class="col-md-6">
+									
+										<input class="form-control" type="text" placeholder="" name="mno" pattern="[1-9]{1}[0-9]{9}" title="Please enter 10 digit mobile number.">
+									
+								</div>
+								
+								
+								<div class="col-md-6">
+								
+							<div class="form-btn">
+									<input class="submit-btn" type=submit value="Check">
+								</div> </div>
+								</div>
+					</form>
+					<h6><b>Please verify if it is you and enter the check out time</h5>
+					{% if tab %}
+							
+
+						<table class="table table-striped">
+						<tr>
+						
+						<th>Name</th><th>Email</th><th>Phone number</th>						
+						</tr>
+						
+						
+                        <form action="check" method=get>						
+						<tr>
+						 {% for col in tab %}
+						   
+						   <td>{{col}}
+						   {% if forloop.counter == 3 %}
+						   <input type="hidden" value="{{ col }}" name="mno">
+						   {% endif %}
+		
+						   </td>
+						 {% endfor %}
+						  </tr>	
+						  </table>
+						 
+						 <div class="row">
+								<div class="col-md-8">
+									<div class="form-group"><span class="form-label"> Check Out Time(HH:MM)</span>
+										<input class="form-control" type="text" placeholder="" name="ct" title="HH:MM">
+									</div>
+								</div>
+								<div class="col-md-4">
+									
+										<span class="form-label"> (AM/PM)</span>
+										<select class="form-control" name="ap">
+											<option>AM</option>
+											<option>PM</option>
+										</select>
+										<span class="select-arrow"></span>
+
+								</div>
+								
+								</div>
+						<div class="form-btn">
+									<input class="submit-btn" type=submit value="Check">
+								</div>		
+						
+                        	
+                         </form>						 
+						
+						
+                      
+                      {% else %}
+                        <h5 style="color:red">No records found</h5>	
+                      {% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+
+
+
+
+

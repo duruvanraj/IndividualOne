@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Visitor details</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+
+	<!-- Bootstrap -->
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'login/css/bootstrap.min.css' %}" type="text/css" />
+
+	<!-- Custom stlylesheet -->
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'login3/css/style.css' %}" type="text/css" />
+
+
+<style>
+h3 {background-color:Blue;}
+</style>		
+<h3 style="color:white">Welcome Visitor</h3>
+</head>
+
+<body>
+
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+			<h1 style="color:white">Visitors details</h1>
+				<div class="row">
+				
+				 
+					<div class="booking-form">
+						
+
+					{% if tab %}
+							
+
+						<table class="table table-striped">
+						<tr>
+						
+						<th>Sno</th><th>V-Name</th><th>V-Email</th><th>V-Phone number</th><th>H-Name</th><th>H-Mail</th><th>H-Number</th><th>Check-in</th><th>Check-out</th>						
+						</tr>
+						{% for row in tab %}
+						<tr>
+						 {% for col in row %}
+						 {% if forloop.counter == 1 %}
+						   <td>{{forloop.parentloop.counter}}</td>
+						   {% endif %}
+                        					
+						
+						
+						   
+						   <td>{{col}}
+						  
+		
+						   </td>
+						 {% endfor %}
+						  </tr>	
+						   {% endfor %}
+						  </table>
+						 
+											 
+						
+						
+                      
+                      {% else %}
+                        <h5 style="color:red">No records found</h5>	
+                      {% endif %}
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
+
+
+
+
+

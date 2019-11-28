@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+	<title>Details form</title>
+
+	<!-- Google font -->
+	<link href="https://fonts.googleapis.com/css?family=PT+Sans:400" rel="stylesheet">
+
+
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'login/css/bootstrap.min.css' %}" type="text/css" />
+
+
+	{% load static %}
+	<link rel="stylesheet" href="{% static 'login3/css/style.css' %}" type="text/css" />
+
+
+<style>
+h3 {background-color:Blue;}
+</style>		
+<h3 style="color:white">Welcome Visitor</h3>
+</head>
+
+<body>
+
+	<div id="booking" class="section">
+		<div class="section-center">
+			<div class="container">
+			<h1 style="color:white">Details Form</h1>
+				<div class="row">
+				
+				 
+					<div class="booking-form">
+						<form action="submit" method=get>
+							<div class="row">
+								<div class="col-md-6">
+									<div class="form-group"><span class="form-label">  Name</span>
+										<input class="form-control" type="text" placeholder="" required name="name">
+									</div>
+								</div>
+								<div class="col-md-6">
+									<div class="form-group"><span class="form-label"> Phone </span>
+										<input class="form-control" type="text" placeholder="" name="mno" pattern="[1-9]{1}[0-9]{9}" title="Please enter 10 digit mobile number.">
+									
+									</div>
+								</div></div>
+							<div class="row">
+								<div class="col-md-4">
+									<div class="form-group"><span class="form-label"> Check In Time(HH:MM)</span>
+										<input class="form-control" type="text" placeholder="" name="cit" title="HH:MM">
+									</div>
+								</div>
+								<div class="col-md-2">
+									
+										<span class="form-label"> (AM/PM)</span>
+										<select class="form-control" name="ap1">
+											<option>AM</option>
+											<option>PM</option>
+										</select>
+										<span class="select-arrow"></span>
+
+								</div>
+								<div class="col-md-4">
+									<div class="form-group"><span class="form-label"> Check Out Time(HH:MM)</span>
+										<input class="form-control" type="text" placeholder="" name="cot" title="HH:MM">
+									</div>
+								</div>
+								<div class="col-md-2">
+									
+										<span class="form-label"> (AM/PM)</span>
+										<select class="form-control" name="ap2">
+											<option>AM</option>
+											<option>PM</option>
+										</select>
+										<span class="select-arrow"></span>
+
+								</div>
+								</div>
+								<div class="row">
+								<div class="col-md-12">
+									<div class="form-group"><span class="form-label"> Host name</span>
+										<input class="form-control" type="text" placeholder="" required name="hname">
+										</div>
+								</div></div>
+								<div class="row">
+								<div class="col-md-12">
+									<div class="form-group"><span class="form-label"> Address visited</span>
+										<input class="form-control" type="text" placeholder="" maxlength="30" size="30" required name="addr">
+										</div>
+								</div>
+								</div>
+								
+							<div class="form-btn">
+									<input class="submit-btn" type=submit value="Save">
+								</div>
+					
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>
