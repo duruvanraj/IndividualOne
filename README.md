@@ -12,5 +12,5 @@ Django has been used as the library to integrate web application with python
 The front-end has been designed as a web based interface. The data are stored at the backend in PostgreSQL. 
 
 ### User home page
-![Home](../Web Files/Output/home.png)
+![Home](https://github.com/latha-velmurugan123/IndividualOne/blob/master/Web%20Files/Output/checkout0.png)
 
