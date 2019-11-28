@@ -43,7 +43,7 @@ The visitor before leaving the office must fill the checkout form. As prescribed
 After entering it checks the database for visitor details. Upon successful return, it displays the visitor details in table format as shown below.
 
 ### Check Out- table
-![CheckOut](https://github.com/latha-velmurugan123/IndividualOne/blob/master/Web%20Files/Output/checkout1.png)
+![CheckOut](https://github.com/latha-velmurugan123/IndividualOne/blob/master/Web%20Files/Output/checkout2.png)
 
 After verifying the details he/she can enter checkout time and click check button. This triggers an e-mail to the vistor with the complete form asking for details as stated in the problem
 
