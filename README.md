@@ -22,7 +22,7 @@ This form asks for visitor details and host details that he is about to visit as
 After the details of host and visitor are entered, once check in button is clicked. It triggers an email and sms to host.
 
 #### Email
-![Email](https://github.com/latha-velmurugan123/IndividualOne/blob/master/Web%20Files/Output/mail.png)
+![Email](https://github.com/latha-velmurugan123/IndividualOne/blob/master/Web%20Files/Output/mail2.png)
 
 The mail id used as sender in this automation is rajabadhar.vidathusirippu@gmail.com which is specifically created for the purpose of assignment. The mail with visitor details is sent to host email as shown above.
 
