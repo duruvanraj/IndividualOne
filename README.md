@@ -17,7 +17,7 @@ The above page is displayed to the user with options Check in, Check Out and Vis
 The user must click check in to enter new visitor details
 
 ### Check in form
-![Check in](https://github.com/latha-velmurugan123/IndividualOne/blob/master/Web%20Files/Output/checkin.png)
+![Check in](https://github.com/latha-velmurugan123/IndividualOne/blob/master/Web%20Files/Output/chekin.png)
 This form asks for visitor details and host details that he is about to visit as per the requirement stated in problem statement
 After the details of host and visitor are entered, once check in button is clicked. It triggers an email and sms to host.
 
